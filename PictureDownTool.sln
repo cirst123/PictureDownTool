@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureDownTool", "PictureDownTool.csproj", "{2E69D0E3-F2B3-4742-A975-0E5AB940F440}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E69D0E3-F2B3-4742-A975-0E5AB940F440}.Debug|x86.ActiveCfg = Debug|x86
+		{2E69D0E3-F2B3-4742-A975-0E5AB940F440}.Debug|x86.Build.0 = Debug|x86
+		{2E69D0E3-F2B3-4742-A975-0E5AB940F440}.Release|x86.ActiveCfg = Release|x86
+		{2E69D0E3-F2B3-4742-A975-0E5AB940F440}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9516DB3A-25AC-49E5-91FD-ABDF09E423AF}
+	EndGlobalSection
+EndGlobal
