@@ -100,6 +100,15 @@ namespace PictureDownTool
                 if (isExistNoType)
                     return;
 
+
+                List<string> listName = listImg.Select(n => n.Substring(0, n.IndexOf(","))).ToList();
+                if (listName.GroupBy(i => i).Where(g => g.Count() > 1).Count() >= 1)
+                {
+                    txtMsg.Text = "名称有重复";
+                    return;
+                }
+
+
                 foreach (Control c in this.Controls)
                 {
                     if (c.GetType().Equals(typeof(Button)) || c.GetType().Equals(typeof(ComboBox)) || c.GetType().Equals(typeof(GroupBox)) || c.GetType().Equals(typeof(CheckBox)))
@@ -222,7 +231,11 @@ namespace PictureDownTool
         }
         private void ProgressIng(object source, ElapsedEventArgs e)
         {
-            progressBar1.Value = System.IO.Directory.GetFiles(filePath, (ckbPNGOrJPG.Checked ? "*.jpg" : "*.png")).Count();
+            int count = System.IO.Directory.GetFiles(dirPath, (ckbPNGOrJPG.Checked ? "*.jpg" : "*.png")).Count();
+            System.Diagnostics.Debug.WriteLine(count + "_" + DateTime.Now.ToShortTimeString());
+
+            txtProgress.Text = string.Format("{0}/{1}", count, listImg.Count);
+            progressBar1.Value = count;
         }
 
         public static void HttpDownloadFile(string url, string path)

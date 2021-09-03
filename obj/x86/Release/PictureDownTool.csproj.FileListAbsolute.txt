@@ -10,3 +10,14 @@ D:\Product\TheadDownImg\obj\x86\Release\PictureDownTool.csprojAssemblyReference.
 D:\Product\TheadDownImg\obj\x86\Release\PictureDownTool.csproj.CoreCompileInputs.cache
 D:\Product\TheadDownImg\obj\x86\Release\PictureDownTool.csproj.CopyComplete
 D:\Product\TheadDownImg\obj\x86\Release\PictureDownTool.Main.resources
+D:\Product\PictureDownTool\obj\x86\Release\PictureDownTool.Main.resources
+D:\Product\PictureDownTool\obj\x86\Release\TheadDownImg.Properties.Resources.resources
+D:\Product\PictureDownTool\obj\x86\Release\PictureDownTool.csproj.GenerateResource.cache
+D:\Product\PictureDownTool\obj\x86\Release\PictureDownTool.csproj.CoreCompileInputs.cache
+D:\Product\PictureDownTool\bin\Release\Aspose.Cells.dll
+D:\Product\PictureDownTool\obj\x86\Release\PictureDownTool.csproj.CopyComplete
+D:\Product\PictureDownTool\bin\Release\图片下载工具2.3.exe.config
+D:\Product\PictureDownTool\bin\Release\图片下载工具2.3.exe
+D:\Product\PictureDownTool\bin\Release\图片下载工具2.3.pdb
+D:\Product\PictureDownTool\obj\x86\Release\图片下载工具2.3.exe
+D:\Product\PictureDownTool\obj\x86\Release\图片下载工具2.3.pdb

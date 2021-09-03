@@ -126,7 +126,9 @@
 	a、https://mobilecodec.alipay.com/show.htm?code=cpx03418se3dcdgzs2oru28，应该填写“=”，文件名称为：cpx03418se3dcdgzs2oru28.png
 	b、https://mobilecodec.alipay.com/cpx03418se3dcdgzs2oru28 应该填写“/”文件名称为cpx03418se3dcdgzs2oru28.png  
 6、 分隔符不为空时检查数据有效性是以是否存在“文件名称分隔符”来判断的，如果连接中没有“文件名称分隔符”则不会下载
-7、如果选择的文件是Excel，则Excel参数必填计数从0开始</value>
+7、如果选择的文件是Excel，则Excel参数必填计数从0开始
+8、下载完成后请比对数据条数和下载文件个数，获取真实情况
+</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

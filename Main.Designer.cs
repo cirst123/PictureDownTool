@@ -45,12 +45,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtColName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtSheet = new System.Windows.Forms.TextBox();
             this.txtRowStart = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.ckbPNGOrJPG = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtSheet = new System.Windows.Forms.TextBox();
+            this.txtProgress = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +62,7 @@
             this.btnDwon.Location = new System.Drawing.Point(816, 85);
             this.btnDwon.Name = "btnDwon";
             this.btnDwon.Size = new System.Drawing.Size(90, 22);
-            this.btnDwon.TabIndex = 0;
+            this.btnDwon.TabIndex = 11;
             this.btnDwon.Text = "下载";
             this.btnDwon.UseVisualStyleBackColor = true;
             this.btnDwon.Click += new System.EventHandler(this.btnDwon_Click);
@@ -75,14 +76,14 @@
             this.txtTxtPath.Name = "txtTxtPath";
             this.txtTxtPath.ReadOnly = true;
             this.txtTxtPath.Size = new System.Drawing.Size(703, 21);
-            this.txtTxtPath.TabIndex = 2;
+            this.txtTxtPath.TabIndex = 3;
             // 
             // btnSelFile
             // 
             this.btnSelFile.Location = new System.Drawing.Point(15, 12);
             this.btnSelFile.Name = "btnSelFile";
             this.btnSelFile.Size = new System.Drawing.Size(182, 23);
-            this.btnSelFile.TabIndex = 3;
+            this.btnSelFile.TabIndex = 2;
             this.btnSelFile.Text = "选择数据文件（*.txt|*.xlsx）";
             this.btnSelFile.UseVisualStyleBackColor = true;
             this.btnSelFile.Click += new System.EventHandler(this.btnSelFile_Click);
@@ -149,7 +150,7 @@
             this.txtSplit.MaxLength = 10;
             this.txtSplit.Name = "txtSplit";
             this.txtSplit.Size = new System.Drawing.Size(46, 21);
-            this.txtSplit.TabIndex = 9;
+            this.txtSplit.TabIndex = 0;
             // 
             // txtMsg
             // 
@@ -162,7 +163,7 @@
             this.txtMsg.ReadOnly = true;
             this.txtMsg.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtMsg.Size = new System.Drawing.Size(891, 340);
-            this.txtMsg.TabIndex = 10;
+            this.txtMsg.TabIndex = 11;
             this.txtMsg.Text = resources.GetString("txtMsg.Text");
             // 
             // progressBar1
@@ -189,7 +190,7 @@
             this.txtColAddr.MaxLength = 10;
             this.txtColAddr.Name = "txtColAddr";
             this.txtColAddr.Size = new System.Drawing.Size(36, 21);
-            this.txtColAddr.TabIndex = 13;
+            this.txtColAddr.TabIndex = 4;
             // 
             // label4
             // 
@@ -206,7 +207,7 @@
             this.txtColName.MaxLength = 10;
             this.txtColName.Name = "txtColName";
             this.txtColName.Size = new System.Drawing.Size(37, 21);
-            this.txtColName.TabIndex = 15;
+            this.txtColName.TabIndex = 5;
             // 
             // groupBox1
             // 
@@ -221,48 +222,9 @@
             this.groupBox1.Location = new System.Drawing.Point(379, 69);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(347, 44);
-            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Excel";
-            // 
-            // txtRowStart
-            // 
-            this.txtRowStart.Location = new System.Drawing.Point(305, 17);
-            this.txtRowStart.MaxLength = 10;
-            this.txtRowStart.Name = "txtRowStart";
-            this.txtRowStart.Size = new System.Drawing.Size(37, 21);
-            this.txtRowStart.TabIndex = 17;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(260, 21);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 12);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "起始行";
-            // 
-            // ckbPNGOrJPG
-            // 
-            this.ckbPNGOrJPG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ckbPNGOrJPG.AutoSize = true;
-            this.ckbPNGOrJPG.Location = new System.Drawing.Point(744, 87);
-            this.ckbPNGOrJPG.Name = "ckbPNGOrJPG";
-            this.ckbPNGOrJPG.Size = new System.Drawing.Size(66, 16);
-            this.ckbPNGOrJPG.TabIndex = 17;
-            this.ckbPNGOrJPG.Text = "PNG/JPG";
-            this.ckbPNGOrJPG.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txtSplit);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(203, 69);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(163, 44);
-            this.groupBox2.TabIndex = 18;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Txt";
             // 
             // label6
             // 
@@ -279,13 +241,63 @@
             this.txtSheet.MaxLength = 10;
             this.txtSheet.Name = "txtSheet";
             this.txtSheet.Size = new System.Drawing.Size(36, 21);
-            this.txtSheet.TabIndex = 19;
+            this.txtSheet.TabIndex = 3;
+            // 
+            // txtRowStart
+            // 
+            this.txtRowStart.Location = new System.Drawing.Point(305, 17);
+            this.txtRowStart.MaxLength = 10;
+            this.txtRowStart.Name = "txtRowStart";
+            this.txtRowStart.Size = new System.Drawing.Size(37, 21);
+            this.txtRowStart.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(260, 21);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 12);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "起始行";
+            // 
+            // ckbPNGOrJPG
+            // 
+            this.ckbPNGOrJPG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ckbPNGOrJPG.AutoSize = true;
+            this.ckbPNGOrJPG.Location = new System.Drawing.Point(744, 87);
+            this.ckbPNGOrJPG.Name = "ckbPNGOrJPG";
+            this.ckbPNGOrJPG.Size = new System.Drawing.Size(66, 16);
+            this.ckbPNGOrJPG.TabIndex = 10;
+            this.ckbPNGOrJPG.Text = "PNG/JPG";
+            this.ckbPNGOrJPG.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtSplit);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Location = new System.Drawing.Point(203, 69);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(163, 44);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Txt";
+            // 
+            // txtProgress
+            // 
+            this.txtProgress.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtProgress.AutoSize = true;
+            this.txtProgress.Location = new System.Drawing.Point(460, 478);
+            this.txtProgress.Name = "txtProgress";
+            this.txtProgress.Size = new System.Drawing.Size(29, 12);
+            this.txtProgress.TabIndex = 12;
+            this.txtProgress.Text = "进度";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(923, 507);
+            this.Controls.Add(this.txtProgress);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.ckbPNGOrJPG);
             this.Controls.Add(this.groupBox1);
@@ -301,7 +313,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(899, 546);
             this.Name = "Main";
-            this.Text = "图片下载工具 2.1";
+            this.Text = "图片下载工具 2.3";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -335,6 +347,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtSheet;
+        private System.Windows.Forms.Label txtProgress;
     }
 }
 

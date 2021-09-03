@@ -1,0 +1,35 @@
+2.0版本
+1、选择数据文件可以选择文本文件和Excel文件，如果是Excel文件数据必须是在第一个Sheet的第一列
+2、选择图片生成图片的文件夹，文件夹必须是空文件夹
+3、线程个数，下载的数据个数非常大的话可以用20的多线程，如果出现问题就选择小的
+4、所有信息提示都会体现在“下载按钮”下边的大文本框中
+5、文件名称分隔符，是创建文件名称的，例如：
+a、https://mobilecodec.alipay.com/show.htm?code=cpx03418se3dcdgzs2oru28，应该填写“=”，文件名称为：cpx03418se3dcdgzs2oru28.png
+b、https://mobilecodec.alipay.com/cpx03418se3dcdgzs2oru28 应该填写“/”文件名称为cpx03418se3dcdgzs2oru28.png 
+c、分隔符为空的情况：https://mdgw.alipay.com/wsdk/img?fileid=A*JN7SR7fPElYAAAAAAAAAAABjAQAAAQ&t=j8IPUrXEH2eS3SrTloMVnAAAAABkJyAAAAAA&bz=am_afts_mrchasset&zoom=original
+ 		此链接的最后的“=”后面的字符都一样程序下载就下载不下来，分隔符中应为空字符串，下载的图片名称为1.png,2.png,3.png  
+6、 分隔符不为空时检查数据有效性是以是否存在“文件名称分隔符”来判断的，如果连接中没有“文件名称分隔符”则不会下载
+7、点击下载时异常退出，请联系技术人员提供帮助
+ 
+
+
+2.1 版本
+1、新增断点许续传功能
+2、Txt和Excel填写的参数分开
+3、新增Excel定制化配置功能，适用于Excel多列的情况，列和行起始为0， 例如地址列在第三列，那么输入框应该输入2，行计算一样
+	A、名称列可为空，为空时下载的文件是以行号为名称
+	B、选择了Excel文件，地址列和起始行必须填写
+4、新增下载图片格式选择功能，文本框中选中则是jpg格式，不选中则是png格式
+5、新增异常信息显示功能，便于远程协助
+
+
+
+
+
+
+技术支持：15011295913
+
+
+
+
+
